@@ -22,7 +22,7 @@ public class Portero extends Jugador implements Serializable{
         this.setPrecio();
     }
     
-    public Portero(){
+    public Portero(){ // portero base añadido
         this.salidas = 0;
         this.manoAmano = 0;
         this.reflejos = 0;
