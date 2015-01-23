@@ -1,12 +1,13 @@
-public Estadio {
-	/**
+package practicafinal;
+public class Estadio {
+        /**
 	* Amplia la funcionalidad de 
-	* la versión anterior con
+	* la versiÃ³n anterior con
 	* los estadios.
 	*/
 	
 	private int capacidad;
-	private int estrellas_uefa;
+	private int estrellas_UEFA;
 	private String nombre;
 	
 	public Estadio(){
@@ -17,7 +18,7 @@ public Estadio {
 	
 	public Estadio(int capacidad, int estrellas_UEFA, String nombre){
 		this.capacidad = capacidad;
-		this.estrellas_uefa = estrellas_UEFA;
+		this.estrellas_UEFA = estrellas_UEFA;
 		this.nombre = nombre;
 	}
 	
