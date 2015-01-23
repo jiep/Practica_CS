@@ -5,7 +5,7 @@ import java.io.Serializable;
 public class JugadorCampo extends Jugador implements Serializable {
 
   private int velocidad;
-
+  
   private int potencia;
 
   private int regate;
@@ -51,7 +51,7 @@ public class JugadorCampo extends Jugador implements Serializable {
         this.regate = regate;
         this.actualizar();
     }
-
+	
     public int getTiro() {
         return tiro;
     }
@@ -65,4 +65,12 @@ public class JugadorCampo extends Jugador implements Serializable {
   public int calcularValoracion(){
       return(velocidad+potencia+regate+tiro+this.getColocacion());
   }  
+  
+  public String toString(){
+	  return this.toString();
+  }
+  
+  private Object toString(){
+	  return this;
+  }
 }
