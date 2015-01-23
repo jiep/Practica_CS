@@ -63,4 +63,15 @@ public class Estadio {
     public void addPersonal (Directivo directivo){
         this.personal.add(directivo);
     }
+
+    @Override
+    public String toString(){
+        String serie = "";
+        serie = serie + this.nombre + " " + this.capacidad + " personas " + 
+                this.estrellas_UEFA + " estrellas";
+        for(Directivo e:personal){
+            serie = serie + " " + e.toString();
+        }
+        return serie;
+    }
 }
