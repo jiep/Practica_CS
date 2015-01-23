@@ -97,7 +97,7 @@ public abstract class Jugador extends Persona implements Comparable,Serializable
       this.setPrecio();
   }
    
-  @Override
+  @Override //Importante override
   public boolean equals(Object o){
       Jugador a=(Jugador) o;
       return(this.getNombreDeportivo().equals(a.getNombreDeportivo()));
