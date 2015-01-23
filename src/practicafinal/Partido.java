@@ -8,6 +8,7 @@ public class Partido implements Serializable{
     private Equipo visitante;
     private GregorianCalendar horario;
     private String resultado;
+    private Estadio estadio;
     
 // Constructor Getter Setter
 
@@ -16,6 +17,7 @@ public class Partido implements Serializable{
         this.visitante = visitante;
         this.horario = horario;
         this.resultado = "No jugado";
+        this.estadio = new Estadio(0,0,"Desconocido");
     }
 
     public Equipo getLocal() {
