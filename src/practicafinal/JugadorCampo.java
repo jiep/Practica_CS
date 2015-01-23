@@ -63,6 +63,7 @@ public class JugadorCampo extends Jugador implements Serializable {
 
   @Override
   public int calcularValoracion(){
-      return(velocidad+potencia+regate+tiro+this.getColocacion());
+      int num=velocidad+potencia+regate+tiro;
+      return(num+this.getColocacion());
   }  
 }
