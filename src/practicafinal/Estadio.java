@@ -1,7 +1,6 @@
 package practicafinal;
 
 public class Estadio {
-<<<<<<< HEAD
 
     /**
     * Amplia la funcionalidad de 
@@ -50,7 +49,7 @@ public class Estadio {
     public int getCapacidad(){
         return this.capacidad;
     }	
-=======
+
 	/**
 	* Amplia la funcionalidad de 
 	* la versi�n anterior con
@@ -84,5 +83,5 @@ public class Estadio {
 	public int getCapacidad(){
 		return this.capacidad;
 	}	
->>>>>>> master
+
 }
