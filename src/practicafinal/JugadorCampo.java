@@ -70,8 +70,5 @@ public class JugadorCampo extends Jugador implements Serializable {
   public String toString(){
 	  return this.toString();
   }
-  
-  private Object toString(){
-	  return this;
-  }
+
 }
