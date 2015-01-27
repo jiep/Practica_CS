@@ -2,7 +2,7 @@ package practicafinal;
 
 import java.io.Serializable;
 
-public class JugadorCampo extends Jugador implements Serializable {
+public class JugadorCampo extends Jugador implements Serializable { //esta clase contiene todos los datos de cada jugador
 
   private int velocidad;
   
