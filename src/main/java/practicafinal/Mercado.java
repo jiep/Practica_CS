@@ -8,11 +8,11 @@ public class Mercado implements Serializable {
 public static ArrayList<Jugador> jugadores;
 
 public Mercado(){
-    jugadores = new ArrayList<>();
+    jugadores = new ArrayList<Jugador>();
 }
 
 public  ArrayList<Jugador> guardarMercado(){
-    ArrayList<Jugador> lista = new ArrayList<>(jugadores);
+    ArrayList<Jugador> lista = new ArrayList<Jugador>(jugadores);
     return lista;
 }
 public  void cargarMercado(ArrayList<Jugador> mercado){

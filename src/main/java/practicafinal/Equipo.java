@@ -45,9 +45,9 @@ public class Equipo implements Comparable,Serializable{
         this.bandera = bandera;
         this.dinero = dinero;
         this.mercado = mercado;
-        directivos = new ArrayList<>();
-        porteros = new ArrayList<>();
-        jugCampo = new ArrayList<>();
+        directivos = new ArrayList<Directivo>();
+        porteros = new ArrayList<Portero>();
+        jugCampo = new ArrayList<JugadorCampo>();
     }
 
     public String getNombre() {

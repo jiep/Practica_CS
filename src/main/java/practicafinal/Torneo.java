@@ -17,7 +17,7 @@ public class Torneo implements Serializable{
   
     public Torneo(String nomb){
       calendario = null;
-      equipos = new ArrayList<>();
+      equipos = new ArrayList<Equipo>();
       campeon = null;
       tipoTorneo = "copa";
       this.nombre = nomb;

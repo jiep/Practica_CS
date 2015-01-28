@@ -9,6 +9,8 @@ import java.awt.Color;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.*;
 
 
@@ -22,7 +24,7 @@ public class Ventana extends javax.swing.JFrame {
      */
     public Ventana() {
        Ventana.mercado = new Mercado();
-       panelesJug=new ArrayList<>();
+       panelesJug=new ArrayList<JPanel>();
         for (int i=0;i<4;i++){
             JPanel p = new JPanel();
             panelesJug.add(p);
@@ -1914,7 +1916,7 @@ public JPanel jugadorNuevo(JPanel p){
 
     private void AceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AceptarActionPerformed
         if ((mercadoLista.getSelectedValuesList()!=null)&&(mercadoEqLista.getSelectedValue()!=null)){
-            ArrayList<Jugador> listaJugs=new ArrayList<>();
+            ArrayList<Jugador> listaJugs=new ArrayList<Jugador>();
             List<String> nombredepjugs=(List <String>)mercadoLista.getSelectedValuesList();
             for (String s:nombredepjugs){
                 String[] b=s.split(" - ");
@@ -1959,7 +1961,7 @@ public JPanel jugadorNuevo(JPanel p){
                 listillaEquipos.updateUI();
                 tuEquipoList.updateUI();
                 jListEquipos.updateUI();
-        }catch(NumberFormatException | ClassCastException e){
+        }catch(NumberFormatException e){
             JOptionPane.showMessageDialog(
                 null,
                 new JLabel("Error: uno o varios de los campos no son válidos.", null, JLabel.LEFT),
@@ -2511,7 +2513,7 @@ public JPanel jugadorNuevo(JPanel p){
             jList1.setListData(listj);
             jList1.updateUI();
             i=0;
-            ArrayList<Equipo> aux = new ArrayList<>();
+            ArrayList<Equipo> aux = new ArrayList<Equipo>();
             aux.addAll(listaEquipos);
             aux.removeAll(t.getEquipos());
             listj = new String[aux.size()];
@@ -2630,8 +2632,8 @@ public JPanel jugadorNuevo(JPanel p){
         ObjectInputStream fichero = null;
         InputStream tmpSerFileStream = null;
         BufferedInputStream bufferedStream = null;
-        ArrayList<Equipo> e=new ArrayList<>();
-        ArrayList<Torneo> t=new ArrayList<>();
+        ArrayList<Equipo> e=new ArrayList<Equipo>();
+        ArrayList<Torneo> t=new ArrayList<Torneo>();
         try{
             tmpSerFileStream = new FileInputStream(jTextField7.getText());
             bufferedStream = new BufferedInputStream(tmpSerFileStream);
@@ -2652,13 +2654,15 @@ public JPanel jugadorNuevo(JPanel p){
                 Mercado.jugadores.add((Jugador) fichero.readObject());
             }
         }
-        catch(IOException|ClassNotFoundException ex){} 
+        catch(IOException ex){} catch (ClassNotFoundException ex) { 
+                Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
+            } 
         finally {
             try {
                 fichero.close();
                 if(null!=tmpSerFileStream)tmpSerFileStream.close();
                 if(null!=bufferedStream)bufferedStream.close();
-            } catch (IOException | NullPointerException exp) {
+            } catch (IOException exp) {
                 JOptionPane.showMessageDialog(
                     null,
                     new JLabel("ERROR, no se ha podido cargar", null, JLabel.LEFT),
@@ -2817,7 +2821,7 @@ public JPanel jugadorNuevo(JPanel p){
 
     private void setDirectivosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_setDirectivosActionPerformed
        Equipo tu=listaEquipos.get(listaEquipos.indexOf(new Equipo(equipoTuCombobox.getSelectedItem().toString(),null,0,null,null,0.0,null)));
-       ArrayList<Directivo> ds=new ArrayList<>();
+       ArrayList<Directivo> ds=new ArrayList<Directivo>();
        for(Directivo d:directivos){
            ds.add(d);
        }
@@ -2979,9 +2983,15 @@ public JPanel jugadorNuevo(JPanel p){
                     break;
                 }
             }
-        } catch (    ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (    ClassNotFoundException  ex) {
             java.util.logging.Logger.getLogger(Ventana.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
+        }   catch (InstantiationException ex) {
+                Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (IllegalAccessException ex) {
+                Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (UnsupportedLookAndFeelException ex) {
+                Logger.getLogger(Ventana.class.getName()).log(Level.SEVERE, null, ex);
+            }
         //</editor-fold>
 
         /* Create and display the form */
@@ -2993,10 +3003,10 @@ public JPanel jugadorNuevo(JPanel p){
         });
  
     }
-    static public ArrayList<Equipo> listaEquipos = new ArrayList<>();
-    static public ArrayList<Torneo> listaTorneo = new ArrayList<>();
+    static public ArrayList<Equipo> listaEquipos = new ArrayList<Equipo>();
+    static public ArrayList<Torneo> listaTorneo = new ArrayList<Torneo>();
     static public Mercado mercado = new Mercado();
-    static public ArrayList<Directivo> directivos=new ArrayList<>();
+    static public ArrayList<Directivo> directivos=new ArrayList<Directivo>();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Aceptar;

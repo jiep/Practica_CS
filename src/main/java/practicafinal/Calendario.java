@@ -42,7 +42,7 @@ public void agregarPartidoCopa(Equipo equipo1, Equipo equipo2, int ronda) {
       if (((Math.log(eq.size())/Math.log(2))!=(Math.round(Math.log(eq.size())/Math.log(2))))||(eq.isEmpty())){
           throw new ErrorNumero("Número incorrecto de equipos");
       } else {
-          ArrayList<Equipo> equipos=new ArrayList<>();
+          ArrayList<Equipo> equipos=new ArrayList<Equipo>();
           equipos.addAll(eq);
           this.calendario= new Partido[(int)(Math.log(equipos.size())/Math.log(2))][equipos.size()/2];
           for (int i = 0; i<(eq.size()/2); i++){
