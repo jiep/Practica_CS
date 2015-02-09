@@ -2,7 +2,7 @@
 
 Práctica de Calidad del Software del grupo 7 correspondiente al curso 2014/2015.
 
-<b>Sprint 1</b> (4 de Febrero de 2015)
+<b>Sprint 1</b> (11 de Febrero de 2015)
 
 | ID | VALOR |                                                   TÍTULO/OBJETIVO                                                   |
 |:--:|:-----:|:-------------------------------------------------------------------------------------------------------------------:|
