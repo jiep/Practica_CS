@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="25" tokens="407">
+      <file line="95"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="196"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[                    .addComponent(penaltisInbox)
+                    .addComponent(generarport)
+                    )));
+        pLayout.setVerticalGroup(
+            pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(introduzca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(nombreInbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(apellidosInbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(nombreDepInbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(edadInbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(pesoInbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(alturaInbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(co,javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)    
+                .addComponent(colocacionInbox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(sal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)]]></codefragment>
+   </duplication>
+   <duplication lines="19" tokens="247">
+      <file line="37"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="139"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[        JLabel introduzca=new JLabel("Introduzca a su nuevo jugador (portero)");
+        introduzca.setForeground(new java.awt.Color(0, 0, 255));
+        p.setLayout(new BorderLayout());
+        JTextField nombreInbox = new javax.swing.JTextField("Nombre");
+        nombreInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JTextField apellidosInbox = new javax.swing.JTextField("Apellidos");
+        apellidosInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JTextField nombreDepInbox = new javax.swing.JTextField("Nombre deportivo");
+        nombreDepInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JTextField edadInbox = new javax.swing.JTextField("Edad");
+        edadInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JTextField pesoInbox = new javax.swing.JTextField("Peso");
+        pesoInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JTextField alturaInbox = new javax.swing.JTextField("Altura");
+        alturaInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JLabel co=new JLabel("Colocacion: ");
+        JComboBox colocacionInbox=new javax.swing.JComboBox(auxCombo);
+        colocacionInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JLabel sal=new JLabel("Salidas: ");]]></codefragment>
+   </duplication>
+   <duplication lines="14" tokens="241">
+      <file line="1697"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="1742"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[                Portero p=new Portero(
+                             Integer.parseInt((String)((JComboBox) panel.getComponent(10)).getSelectedItem()), //salidas
+                             Integer.parseInt((String)((JComboBox) panel.getComponent(14)).getSelectedItem()), //mano a mano
+                             Integer.parseInt((String)((JComboBox) panel.getComponent(12)).getSelectedItem()), // reflejos
+                             Integer.parseInt((String)((JComboBox) panel.getComponent(16)).getSelectedItem()), // penaltis
+                             ((JTextField) panel.getComponent(3)).getText(), //nombre deportivo
+                             Integer.parseInt((String)((JComboBox) panel.getComponent(8)).getSelectedItem()), //colocacion
+                             ((JTextField) panel.getComponent(1)).getText(), //nombre
+                             ((JTextField) panel.getComponent(2)).getText(), //apellidos
+                             Integer.parseInt((String)((JTextField) panel.getComponent(4)).getText()), //fecha nacimiento (date)
+                             Double.parseDouble(((JTextField) panel.getComponent(5)).getText()), //peso (double)
+                             Double.parseDouble(((JTextField) panel.getComponent(6)).getText()) //altura
+                            );
+               Mercado.jugadores.add(p);]]></codefragment>
+   </duplication>
+   <duplication lines="24" tokens="236">
+      <file line="2217"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2259"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[               jugCampo.setNombre(jTextField1.getText());
+               jugCampo.setApellidos(jTextField2.getText());
+               jugCampo.setNombreDeportivo(jTextField3.getText());
+               jugCampo.setFechaNacimiento(Integer.parseInt(jTextField4.getText()));
+               jugCampo.setPeso(Double.parseDouble(jTextField5.getText()));
+               jugCampo.setAltura(Double.parseDouble(jTextField6.getText()));
+               jugCampo.setVelocidad(Integer.parseInt(jComboBox1.getSelectedItem().toString()));
+               jugCampo.setPotencia(Integer.parseInt(jComboBox2.getSelectedItem().toString()));
+               jugCampo.setRegate(Integer.parseInt(jComboBox3.getSelectedItem().toString()));
+               jugCampo.setTiro(Integer.parseInt(jComboBox4.getSelectedItem().toString()));
+               jugCampo.setColocacion(Integer.parseInt(jComboBox5.getSelectedItem().toString()));
+            }
+                ImageIcon image=new ImageIcon("equipo.gif");
+                JOptionPane.showMessageDialog(
+                    null,
+                    new JLabel("Hecho", image, JLabel.LEFT),
+                    "Aviso", JOptionPane.PLAIN_MESSAGE);
+            }catch(NumberFormatException e){
+                JOptionPane.showMessageDialog(
+                    null,
+                    new JLabel("ERROR", null, JLabel.LEFT),
+                    "Aviso: Tipo incorrecto", JOptionPane.ERROR_MESSAGE);
+            }
+        }else{]]></codefragment>
+   </duplication>
+   <duplication lines="13" tokens="176">
+      <file line="2204"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2246"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[               portero.setNombre(jTextField1.getText());
+               portero.setApellidos(jTextField2.getText());
+               portero.setNombreDeportivo(jTextField3.getText());
+               portero.setFechaNacimiento(Integer.parseInt(jTextField4.getText()));
+               portero.setPeso(Double.parseDouble(jTextField5.getText()));
+               portero.setAltura(Double.parseDouble(jTextField6.getText()));
+               portero.setSalidas(Integer.parseInt(jComboBox1.getSelectedItem().toString()));
+               portero.setManoAmano(Integer.parseInt(jComboBox2.getSelectedItem().toString()));
+               portero.setReflejos(Integer.parseInt(jComboBox3.getSelectedItem().toString()));
+               portero.setPenaltis(Integer.parseInt(jComboBox4.getSelectedItem().toString()));
+               portero.setColocacion(Integer.parseInt(jComboBox5.getSelectedItem().toString()));
+            }else{
+               JugadorCampo jugCampo = (JugadorCampo) jug;]]></codefragment>
+   </duplication>
+   <duplication lines="23" tokens="144">
+      <file line="66"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="168"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[        penaltisInbox.setForeground(new java.awt.Color(204, 204, 204));
+        JButton generarport=new JButton("Generar");
+        
+        
+        
+// Code adding the component to the parent container - not shown here
+        javax.swing.GroupLayout pLayout = new javax.swing.GroupLayout(p);
+        p.setLayout(pLayout);
+        pLayout.setHorizontalGroup(
+            pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(pLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(introduzca)
+                    .addComponent(nombreInbox)
+                    .addComponent(apellidosInbox)
+                    .addComponent(nombreDepInbox)
+                    .addComponent(edadInbox)
+                    .addComponent(pesoInbox)
+                    .addComponent(alturaInbox)
+                    .addComponent(co)
+                    .addComponent(colocacionInbox)
+                    .addComponent(sal)]]></codefragment>
+   </duplication>
+   <duplication lines="8" tokens="130">
+      <file line="2115"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2289"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[                String nombreJug =jugAdescartar.getSelectedValue().toString().split(" - ")[0];
+                if ((eq.getPorteros().indexOf(new Portero(0,0,0,0,nombreJug,0,null,null,0,0.0,0.0)))!=-1){
+                    Portero p=convertirSelectedAPortero(jugAdescartar,eq);
+                    eq.descartar(p);
+                    mercado.eliminarJugador(p);
+                }
+                else if ((eq.getPorteros().indexOf(new JugadorCampo(0,0,0,0,nombreJug,0,null,null,0,0.0,0.0)))!=-1){
+                    Jugador ju=convertirSelectedAJugadorCampo(jugAdescartar,eq);]]></codefragment>
+   </duplication>
+   <duplication lines="11" tokens="121">
+      <file line="1842"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="1902"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2073"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[        Equipo e=convertirSelectedAEquipo(tuEquipoList);
+        String[] listj= new String[(e.getJugCampo().size()+e.getPorteros().size())];
+        int i=0;
+        for (Jugador j:e.getJugCampo()){
+            listj[i]=j.getNombreDeportivo()+" - "+j.getValoracion()+" - "+j.getPrecio()+"€";
+            i++;
+        }
+        for (Jugador k:e.getPorteros()){
+            listj[i]=k.getNombreDeportivo()+" - "+k.getValoracion()+" - "+k.getPrecio()+"€";
+            i++;
+        }]]></codefragment>
+   </duplication>
+   <duplication lines="5" tokens="116">
+      <file line="2884"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2898"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[    private void eliminarJugButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_eliminarJugButton1ActionPerformed
+        Equipo eq = listaEquipos.get(listaEquipos.indexOf(new Equipo((String)jugadorCombobox1.getSelectedItem(),null,0,null,null,0,null)));
+        String nombre =jugAdescartar1.getSelectedValue().toString().split(" - ")[0];
+        String apellidos =jugAdescartar1.getSelectedValue().toString().split(" - ")[1];
+        Directivo jug = eq.getDirectivos().get(eq.getDirectivos().indexOf(new Directivo(nombre,apellidos)));]]></codefragment>
+   </duplication>
+   <duplication lines="4" tokens="109">
+      <file line="2167"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2199"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[        }else{
+            String nombreJug =jugAdescartar.getSelectedValue().toString().split(" - ")[0];
+            Jugador jug = mercado.guardarMercado().get(mercado.guardarMercado().indexOf(new Portero(0,0,0,0,nombreJug,0,null,null,0,0.0,0.0)));
+            if (jug.getClass().equals(new Portero(0,0,0,0,nombreJug,0,null,null,0,0.0,0.0).getClass())){]]></codefragment>
+   </duplication>
+   <duplication lines="5" tokens="106">
+      <file line="2872"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2884"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2898"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[        try{
+            Equipo eq = listaEquipos.get(listaEquipos.indexOf(new Equipo((String)jugadorCombobox1.getSelectedItem(),null,0,null,null,0,null)));
+            String nombre =jugAdescartar1.getSelectedValue().toString().split(" - ")[0];
+            String apellidos =jugAdescartar1.getSelectedValue().toString().split(" - ")[1];
+            Directivo jug = eq.getDirectivos().get(eq.getDirectivos().indexOf(new Directivo(nombre,apellidos)));]]></codefragment>
+   </duplication>
+   <duplication lines="5" tokens="102">
+      <file line="2241"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <file line="2287"
+            path="/home/alumno/Escritorio/Practica_CS-master/src/main/java/practicafinal/Ventana.java"/>
+      <codefragment><![CDATA[            try{
+            Equipo eq = listaEquipos.get(listaEquipos.indexOf(new Equipo((String)jugadorCombobox.getSelectedItem(),null,0,null,null,0,null)));
+            String nombreJug =jugAdescartar.getSelectedValue().toString().split(" - ")[0];
+            if ((eq.getPorteros().indexOf(new Portero(0,0,0,0,nombreJug,0,null,null,0,0.0,0.0)))!=-1){
+               Portero portero = eq.getPorteros().get(eq.getPorteros().indexOf(new Portero(0,0,0,0,nombreJug,0,null,null,0,0.0,0.0)));]]></codefragment>
+   </duplication>
+</pmd-cpd>
