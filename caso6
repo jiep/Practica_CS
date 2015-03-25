@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://hotel.iberia.com/" />
+<title>caso6</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">caso6</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/hotel/gr/olive-groove.es.html?aid=380264;label=ibeair-homepage-sb;sid=d982cc6c2737bd157eb298223d0eb0d9;dcid=1;checkin=2016-01-10;checkout=2016-01-17;ucfs=1;srfid=2eaf559d35b8a9479453909e4570b2d043498d1aX1;highlight_room=128577201#availability</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;nr_rooms_128577201_85215542_7_0&quot;] &gt; option[value=&quot;1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.avail-date-submit.</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=nr_rooms_128577201_85215542_7_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=nr_rooms_128577201_85215542_7_0</td>
+	<td>label=regexp:1\s+\(€ 350\)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=select[name=&quot;nr_rooms_128577201_85215542_7_0&quot;] &gt; option[value=&quot;1&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=128577201_85215542_7_0</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.bp_change_dates_checkout_monthday_select</td>
+	<td>label=mié 27</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.bp_change_dates_submit &gt; button.b-button.b-button_primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='button']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>css=select.bp_change_dates_checkout_monthday_select</td>
+	<td>label=dom 17</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=div.bp_change_dates_submit &gt; button.b-button.b-button_primary</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>etfsdrt</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=nr_guests_128577201_85215542_7_0</td>
+	<td>label=2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=remarks</td>
+	<td>wqerqwerqwerqwerqwerqweer</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=book</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=lastname</td>
+	<td>asdr</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=email</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>etfsdrt@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email_confirm</td>
+	<td>rtfsdrt@gmail.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email_confirm</td>
+	<td>etfsdrt@gmail.com</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=book</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

@@ -3,32 +3,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://hotel.iberia.com/" />
-<title>caso1</title>
+<link rel="selenium.base" href="http://www.iberia.com/" />
+<title>caso2</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">caso1</td></tr>
+<tr><td rowspan="1" colspan="3">caso2</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
-	<td>/</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=a.close-popup &gt; img.fade</td>
+	<td>/?market=ES&amp;language=es</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
 	<td>css=li.search-hotels &gt; a</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>css=#current_language &gt; span.description</td>
 	<td></td>
 </tr>
 <tr>
@@ -44,23 +34,29 @@
 <tr>
 	<td>select</td>
 	<td>name=checkin_monthday</td>
-	<td>label=7</td>
+	<td>label=1</td>
 </tr>
 <tr>
 	<td>select</td>
 	<td>name=checkin_year_month</td>
-	<td>label=marzo '15</td>
+	<td>label=mayo '15</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='2015-5']</td>
+	<td></td>
 </tr>
 <tr>
 	<td>select</td>
-	<td>name=checkout_monthday</td>
-	<td>label=vie 13</td>
+	<td>name=checkout_year_month</td>
+	<td>label=junio '15</td>
 </tr>
 <tr>
 	<td>click</td>
 	<td>xpath=(//button[@type='submit'])[2]</td>
 	<td></td>
 </tr>
+
 </tbody></table>
 </body>
 </html>
