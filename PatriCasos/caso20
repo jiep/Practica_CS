@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://production.rent-at-avis.com/" />
+<title>caso20</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">caso20</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://production.rent-at-avis.com/avisonline/es/avis_iberia.nsf/c/More,Get_a_Quote?OpenDocument&amp;BODYPARAMS=*Country=ES0*Country2=ES0*ETA=03apr15/0900*ETT=05apr15/0900*MST=6223A31C3919255AC12575B3003CD720*STA=MAD*ILC=MAD*GRP=B*CODATE=03-04-2015*COTIME=0900*CIDATE=05-04-2015*CITIME=0900*IBEOwner=ES*TID=*SOR=T/0181053F*QBRMK=*QBSETransferList=*QBSEMessages=*AWD=X406500*WIZ=*CHKNAME=*COR=ES0*CTR=ES0*LNG=ES*CLIENTDATE=27-03-2015*CLIENTTIME=1633*S1=Y*TARGETGROUP=Default*QBPreviousStep=/avisonline/es/avis_iberia.nsf/c/Home$OpenDocument*VSTA=*VILC=*RAN=0.4556018191033765</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>name=contentframe</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[2]/input</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=get_quote</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>name=FirstName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=FirstName</td>
+	<td>Nombre</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=LastName</td>
+	<td>Apellidos</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=StreetAddress</td>
+	<td>Calle</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=ZIPCode</td>
+	<td>28002</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=City</td>
+	<td>Madrid</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=PhoneNumber</td>
+	<td>911111111</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=MailAddress1</td>
+	<td>email@email.com</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=MailAddress2</td>
+	<td>email@email.com</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=NoVIA</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=CCCode</td>
+	<td>label=Visa</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=CCNumber</td>
+	<td>1234567890123456</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=CEXMonth</td>
+	<td>label=10</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=CEXYear</td>
+	<td>label=2025</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>name=get_quote</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

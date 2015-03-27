@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://production.rent-at-avis.com/" />
+<title>caso18</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">caso18</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/avisonline/es/avis_iberia.nsf/c/servicio_preferred</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Leer Términos y Condiciones del concurso</td>
+	<td></td>
+</tr>
+<tr>
+	<td>goBack</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//a/font</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=ctl00_main_ddlLanguageSelector</td>
+	<td>label=Italiano</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//option[@value='it-IT']</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
