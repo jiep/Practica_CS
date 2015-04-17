@@ -244,6 +244,7 @@ public class Equipo implements Comparable,Serializable{
      return aux;
  }
 
+    @Override
     public int compareTo(Object o) {
         Equipo e=(Equipo) o;
         return(this.getNombre().compareTo(e.getNombre()));
