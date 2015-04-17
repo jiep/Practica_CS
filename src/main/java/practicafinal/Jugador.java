@@ -79,7 +79,7 @@ public abstract class Jugador extends Persona implements Comparable,Serializable
       return this.getClass().equals(new JugadorCampo().getClass());
       }
   
-  @Override
+  
   public int compareTo(Object o){
       Jugador aux=(Jugador) o;
       int a=this.getValoracion();
