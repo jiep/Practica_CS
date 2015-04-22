@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pmd version="4.2.2" timestamp="2015-02-25T09:48:04.504">
-<file name="/home/alumno/Escritorio/pruebas/src/main/java/practicafinal/Partido.java">
-<violation beginline="11" endline="11" begincolumn="21" endcolumn="27" rule="UnusedPrivateField" ruleset="Unused Code Rules" package="practicafinal" class="Partido" variable="estadio" externalInfoUrl="http://pmd.sourceforge.net/rules/unusedcode.html#UnusedPrivateField" priority="3">
-Avoid unused private fields such as 'estadio'.
-</violation>
-</file>
-</pmd>
